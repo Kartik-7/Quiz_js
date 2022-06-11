@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5705/5705144.png">
+</head>
+<body id="page" >
+    <span id="ques-txt">
+        <p id="start-txt">
+        Click Start button to start the quiz.</br>
+        Double click Final Submit to Submit Anytime.</p>
+    </span>
+    <span id ="status">
+    <ol type="1" id="attempted">
+
+    </ol>
+    </span>
+    <span id="marking">
+        <pre>
+        Marking Scheme:
+        Correct = 1
+
+        Incorrect = -0.25
+
+        UnAnswered = 0
+        </pre>
+    </span>
+    <div class="wrapper">
+    <input type="radio" name="answer" id="a-btn" class="answers" value="a" />  
+       <label for="a-btn" id="a" class="answers-lbl">optionA</label> 
+
+       <input type="radio" name="answer" id="b-btn" class="answers" value="b" />  
+       <label for="b-btn" id="b" class="answers-lbl">optionB</label> 
+
+       <input type="radio" name="answer" id="c-btn" class="answers" value="c" />  
+       <label for="c-btn" id="c" class="answers-lbl">optionC</label>
+
+       <input type="radio" name="answer" id="d-btn" class="answers" value="d" />  
+       <label for="d-btn" id="d" class="answers-lbl">optionD</label>  
+
+    </div>
+    <div id="savedAns">
+        <p>
+            
+        </p>
+    </div>
+    <div>
+        <button id="start" >
+            START
+        </button>
+    </div>
+    <div class="buttons">
+        <button id="clear-saved"  class="ind-btn" >
+            Clear Saved
+        </button>
+        <button id="previous" class="ind-btn" >
+            Previous
+        </button>
+        <button id="next" class="ind-btn">
+            Next
+        </button>
+        <button id="save_btn" class="ind-btn">
+            Save ans & Next
+        </button>
+    </div>
+    <div>
+        <button id="finalSubmit" ondblclick="finalsubmit()" class="ind-btn">
+            Final Submit 
+        </button>
+    </div>
+    <div >
+        <p id="score">
+            
+        </p>
+        <ol type="1" id="result" >
+            
+        </ol>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
